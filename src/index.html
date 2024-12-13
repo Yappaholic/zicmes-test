@@ -7,17 +7,27 @@
     <title>Тестовое задание</title>
   </head>
   <body>
-    <header class="container-fluid d-flex py-2 flex-row justify-content-between">
-      <h3>Бренд</h3>
+    <header class="container-fluid d-flex py-2 flex-row justify-content-between align-items-center">
+      <h2>Бренд</h2>
       <nav>
         <a role="button" class="btn active border border-0" data-bs-toggle="button" aria-pressed="true">Главная</a>
         <a role="button" class="btn border border-0 link-secondary" data-bs-toggle="button">Каталог</a>
-        <a role="button" class="btn border border-0 link-secondary" data-bs-toggle="button">Цены</a>
+        <a role="button" class="btn border border-0 link-secondary" data-bs-toggle="button">Цены</a >
       </nav>
       <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-telephone-fill" style="font-size: 1rem"></i>Заказать звонок</button>
     </header>
-    <div id="home">
-      <video src="https://gitrequests.github.io/interview-bootstrap/assets/video.mp4" autoplay loop class="object-fit-fill"/>
+    <div id="home" class="d-flex flex-row justify-content-center align-items-center">
+      <div class="d-flex flex-column position-absolute justify-content-between h-50 w-75">
+        <div class="d-flex flex-column">
+          <h1 class="text-white">Купить <span class="text-danger">товар</span> с доставкой</h1>
+          <h4 class="text-white">Официальный поставщик <span class="text-danger">товаров</span> в Стране!</h2>
+        </div>
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <button type="button" class="btn btn-primary btn-xl">Заказать звонок</button>
+          <p class="text-white">Ваши данные <br/>под надёжной защитой</p>
+        </div>
+      </div>
+      <video src="https://gitrequests.github.io/interview-bootstrap/assets/video.mp4" autoplay loop class="video-fluid min-vw-100"></video>
     </div>
   </body>
 </html>
