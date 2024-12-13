@@ -1,1 +1,10 @@
-@use "bootstrap/scss/bootstrap";
+//custom variables
+$btn-border-radius-sm: 4px 50px 4px 50px;
+$btn-font-weight: 600;
+$btn-line-height: 1;
+$btn-padding-x-sm: 1.25rem;
+$btn-padding-y-sm: 0;
+$btn-border-width: 0px;
+//import
+@import "../../node_modules/bootstrap/scss/bootstrap"
+
