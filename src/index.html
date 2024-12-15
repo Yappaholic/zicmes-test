@@ -6,28 +6,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>Тестовое задание</title>
   </head>
-  <body>
-    <header class="container-fluid d-flex py-2 flex-row justify-content-between align-items-center">
-      <h2>Бренд</h2>
-      <nav>
+  <body class="container-fluid">
+    <header class="d-flex py-2 flex-row justify-content-between align-items-center">
+      <h2 class="align-bottom">Бренд</h2>
+      <nav class="d-none d-lg-block">
         <a role="button" class="btn active border border-0" data-bs-toggle="button" aria-pressed="true">Главная</a>
         <a role="button" class="btn border border-0 link-secondary" data-bs-toggle="button">Каталог</a>
         <a role="button" class="btn border border-0 link-secondary" data-bs-toggle="button">Цены</a >
       </nav>
-      <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-telephone-fill" style="font-size: 1rem"></i>Заказать звонок</button>
+      <button type="button" class="btn btn-primary">
+        <i class="bi bi-telephone-fill" style="font-size: 1rem"></i>
+        <span class="d-none d-lg-inline-block">Заказать звонок</span>
+      </button>
+      <button type="button" class="btn btn-outline-secondary d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu" aria-controls="mobileMenu">
+        <i class="bi bi-list" style="font-size: 1.4rem"></i>
+      </button>
     </header>
-    <div id="home" class="d-flex flex-row justify-content-center align-items-center">
-      <div class="d-flex flex-column position-absolute justify-content-between h-50 w-75">
+    <div id="home" class="d-flex flex-column justify-content-center align-items-center">
+      <video src="https://gitrequests.github.io/interview-bootstrap/assets/video.mp4" autoplay 
+        loop class="video-fluid min-vw-100 min-vh-100" style="filter: brightness(50%)"></video>
+      <div class="d-flex flex-column position-absolute align-self-center justify-content-between h-50 w-75">
         <div class="d-flex flex-column">
           <h1 class="text-white">Купить <span class="text-danger">товар</span> с доставкой</h1>
           <h4 class="text-white">Официальный поставщик <span class="text-danger">товаров</span> в Стране!</h2>
         </div>
-        <div class="d-flex flex-row justify-content-between align-items-center">
-          <button type="button" class="btn btn-primary btn-xl">Заказать звонок</button>
+      <div>
+          <button type="button" class="btn bg-info border-info btn-primary btn-xl"
+            style="--bs-btn-padding-y: 1.5rem; --bs-btn-padding-x: 2rem">
+            Заказать звонок
+          </button>
           <p class="text-white">Ваши данные <br/>под надёжной защитой</p>
-        </div>
       </div>
-      <video src="https://gitrequests.github.io/interview-bootstrap/assets/video.mp4" autoplay loop class="video-fluid min-vw-100"></video>
     </div>
   </body>
 </html>
