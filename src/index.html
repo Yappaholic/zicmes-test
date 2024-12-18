@@ -7,6 +7,24 @@
     <title>Тестовое задание</title>
   </head>
   <body>
+    <!--Модальное окно-->
+    <div class="modal fade w-auto" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>...</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info btn-info-sm fw-light" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary btn-primary-sm fw-light">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--Навигация-->
     <header class="d-flex py-2 px-2 flex-row justify-content-between align-items-center">
       <h2 class="align-bottom">Бренд</h2>
@@ -16,7 +34,7 @@
         <a role="button" class="btn border border-0 link-secondary" data-bs-toggle="button">Цены</a >
       </nav>
       <div class="d-flex">
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
           <i class="bi bi-telephone-fill" style="font-size: 1rem"></i>
           <span class="d-none d-lg-inline-block">Заказать звонок</span>
         </button>
@@ -35,11 +53,11 @@
           <h4 class="text-white text-center text-xl-start fs-4">Официальный поставщик <span class="text-danger">товаров</span> в Стране!</h2>
         </div>
         <div class="d-flex flex-xl-row flex-column justify-content-between gap-3 gap-xl-0">
-          <button type="button" class="btn btn-info"
+          <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#myModal"
             style="--bs-btn-padding-y: 1.5rem; --bs-btn-padding-x: 2rem">
             Заказать звонок
           </button>
-          <p class="text-white">Ваши данные <br/>под надёжной защитой</p>
+          <p class="text-white text-center text-xl-start">Ваши данные <br/>под надёжной защитой</p>
         </div>
       </div>
     </div>
@@ -48,8 +66,8 @@
       <h2 class="text-white fw-medium text-center m-0 align-middle inline-block">Каталог</h2>
     </div>
     <!--Раздел Каталога-->
-    <div id="catalog" class="my-5 mx-5 d-flex justify-content-center align-items-center">
-      <div class="container w-75">
+    <div id="catalog" class="my-5 mx-2 mx-xl-5 d-flex justify-content-center align-items-center">
+      <div class="container w-100 w-xl-75">
         <div class="row row-cols-1 row-cols-xl-3 gap-4">
           <!-- Первый предмет-->
           <div class="col d-flex flex-column justify-content-between p-0 border rounded-2 gap-2 shadow">
