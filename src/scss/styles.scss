@@ -7,6 +7,21 @@ $btn-padding-y: 0.5rem;
 $btn-font-size-sm: 1rem;
 $btn-border-width: 1px;
 $info: #6f42c1;
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+$utilities: map-merge(
+  $utilities,
+  (    "height": map-merge(
+      map-get($utilities, "height"),
+      ( responsive: true ),
+    ),
+)
+);
 //import
 @import "../../node_modules/bootstrap/scss/bootstrap"
 
